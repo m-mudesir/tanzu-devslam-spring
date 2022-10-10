@@ -36,7 +36,7 @@ spec:
       containers:
       - name: app
         # FIXME: update the image name with its tag.
-        image: ghcr.io/GH_USER/tanzu-devslam-spring:1
+        image: ghcr.io/m-mudesir/tanzu-devslam-spring:3
         resources:
           limits:
             memory: 1Gi
@@ -74,7 +74,7 @@ spec:
   # to see the app in action:
   # $ kubectl -n tanzu-devslam-spring port-forward svc/app 8080:8080
   ports:
-  - port: 8080
+  - port: 5555
     protocol: TCP
     targetPort: 8080
   selector:
